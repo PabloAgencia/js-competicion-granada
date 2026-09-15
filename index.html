@@ -723,9 +723,14 @@
     }
 
     /* ══════════════════════════════════════
-       RESPONSIVE — TABLET (≤900px)
+       RESPONSIVE — TABLET (≤1300px)
+       Ampliado de 900 a 1300: el hero-stats absoluto se solapaba con
+       el boton de telefono del hero en anchos intermedios (~1200px),
+       donde el ancho real reportado por el movil puede caer segun
+       navegador/zoom. Con el layout apilado en un rango mas amplio
+       no hay forma de que vuelvan a coincidir.
     ══════════════════════════════════════ */
-    @media (max-width: 900px) {
+    @media (max-width: 1300px) {
       /* NAV */
       nav { padding: 0 20px; }
       .nav-links { display: none; }
